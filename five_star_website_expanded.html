@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="si">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FIVE STAR Co., LTD helps customers source Japanese auction vehicles, used construction machinery and auto parts, with export inquiry support.">
+<meta name="theme-color" content="#10243a">
+<title>FIVE STAR Co., LTD | Japan Vehicle Auction & Export Support</title>
+<style>
+:root{--navy:#10243a;--navy2:#163f61;--blue:#1769aa;--gold:#f4b942;--ink:#182433;--muted:#64748b;--bg:#f3f6fa;--line:#dce4ed;--white:#fff;--green:#16805d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;font-family:Arial,"Noto Sans Sinhala",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:inherit}
+header{background:linear-gradient(120deg,#0b1d30,#163f61);color:#fff;padding:18px 5vw 62px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1200px;margin:auto}
+.brand{font-weight:900;font-size:1.2rem;letter-spacing:.3px;display:flex;align-items:center;gap:10px}
+.brand-mark{display:inline-grid;place-items:center;width:42px;height:42px;border:2px solid var(--gold);border-radius:10px;color:var(--gold);font-size:1rem;font-weight:900;transform:skew(-5deg)}
+.brand span{color:var(--gold)}
+.brand small{display:block;font-size:.63rem;color:#c9d8e6;font-weight:500;letter-spacing:1px}
+.navlinks{display:flex;align-items:center;gap:17px;flex-wrap:wrap}
+.navlinks a{color:#e6eef7;text-decoration:none;font-size:.92rem}
+.navlinks a:hover{color:var(--gold)}
+.lang-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+select,input,textarea{font:inherit}
+.lang-tools select{width:auto;max-width:180px;padding:9px;border:1px solid #668098;background:#fff;color:#182433;border-radius:8px}
+button,.btn{border:0;border-radius:9px;padding:12px 16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px;transition:transform .15s,filter .15s}
+button:hover,.btn:hover{filter:brightness(1.04);transform:translateY(-1px)}
+.primary{background:var(--blue);color:#fff}.secondary{background:#e9f1f8;color:#17456a}.gold{background:var(--gold);color:#182433}
+.translate-help{font-size:.76rem;color:#c9d8e6;margin-top:7px}
+.hero{max-width:1200px;margin:42px auto 0;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.8rem}
+h1{font-size:clamp(2.15rem,4.7vw,3.8rem);line-height:1.12;margin:12px 0 16px}
+.hero p{max-width:680px;color:#d6e3ef;font-size:1.04rem}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:18px;padding:24px;backdrop-filter:blur(8px)}
+.hero-card strong{font-size:1.15rem}.hero-card li{margin:10px 0;color:#e1ebf5}
+.hero-visual{min-height:260px;border-radius:18px;background:linear-gradient(135deg,#244d6cdd,#0b1d30dd),url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85') center/cover;display:flex;align-items:end;padding:24px;border:1px solid #ffffff30}
+.hero-visual div{font-size:1.35rem;font-weight:800;max-width:330px}
+.wrap{max-width:1200px;margin:-26px auto 0;padding:0 20px 48px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:28px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px;text-align:center;box-shadow:0 8px 24px #10243a0a}
+.stat strong{display:block;font-size:1.15rem;color:#174c78}.stat span{font-size:.83rem;color:var(--muted)}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 30px #10243a0b;padding:22px}
+.section{margin-top:34px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin:0 0 15px}
+h2{font-size:1.55rem;line-height:1.25;margin:0}
+h3{line-height:1.3}
+.muted{color:var(--muted);font-size:.9rem}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.car{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:0 6px 18px #0b1d3008}
+.car-art{height:180px;background:linear-gradient(135deg,#dbe8f3,#f6f9fc);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.car-art img{width:100%;height:100%;object-fit:cover}
+.tag{position:absolute;top:12px;left:12px;background:#fff;color:#173b5b;border-radius:7px;padding:5px 9px;font-size:.76rem;font-weight:800}
+.car-body{padding:17px}.car h3{margin:0 0 5px;font-size:1.13rem}.price{font-size:1.28rem;font-weight:800;color:#0e5c98;margin:10px 0}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:13px 0}
+.spec{background:#f5f8fb;border-radius:8px;padding:8px;font-size:.85rem}.spec b{display:block;font-size:.72rem;color:var(--muted);font-weight:600}
+.note{background:#fff8e6;border:1px solid #f4dfaa;border-radius:12px;padding:14px 16px;margin-top:18px;font-size:.9rem}
+.company-intro{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.company-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px}
+.company-label{color:#9a6700;font-weight:800;font-size:.78rem;letter-spacing:1.2px;text-transform:uppercase}
+.service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:18px}
+.service-icon{font-size:1.8rem;margin-bottom:8px}.service-card h3{font-size:1rem;margin:0 0 6px}.service-card p{margin:0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.step{background:#fff;border:1px solid var(--line);padding:18px;border-radius:13px}
+.step-num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#e3eef8;color:#164c78;font-weight:800;margin-bottom:8px}
+.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.check-item{display:flex;gap:10px;background:#f7f9fc;padding:13px;border-radius:10px}
+.check-item span:first-child{color:var(--green);font-weight:900}
+.faq-list{display:grid;gap:10px}
+details{background:#fff;border:1px solid var(--line);border-radius:11px;padding:15px 17px}
+summary{font-weight:800;cursor:pointer}
+details p{color:var(--muted);margin-bottom:0}
+.filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label{display:block;font-weight:700;font-size:.83rem;margin-bottom:6px;color:#334155}
+input,select,textarea{width:100%;padding:12px 11px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:var(--ink);min-width:0}
+textarea{resize:vertical}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}
+.contact-info{background:linear-gradient(145deg,#10243a,#1c4a6e);color:#fff;border-radius:14px;padding:22px}
+.contact-info p{color:#d6e3ef}
+.contact-line{padding:12px 0;border-bottom:1px solid #ffffff26}
+footer{background:#0b1d30;color:#d9e5f0;padding:30px 20px;text-align:center}
+footer a{color:var(--gold)}
+.small{font-size:.8rem;color:var(--muted)}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.company-intro,.contact-grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){header{padding:15px 16px 48px}.navlinks{gap:12px}.hero{margin-top:28px}.wrap{padding-left:12px;padding-right:12px}.panel{padding:15px}.cards,.steps,.service-grid,.filters,.checklist{grid-template-columns:1fr}.stats{gap:8px}.stat{padding:12px 6px}.car-art{height:150px}.actions button,.hero-actions .btn{flex:1}.lang-tools{width:100%}.lang-tools select{flex:1}.hero-visual{min-height:210px}}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand"><span class="brand-mark">FS</span><div>FIVE STAR <span>Co., LTD</span><small>JAPAN VEHICLE & MACHINERY SOURCING</small></div></div>
+    <div class="navlinks">
+      <a href="#about">අප ගැන</a><a href="#services">සේවා</a><a href="#process">ක්‍රියාවලිය</a><a href="#faq">FAQ</a><a href="#contact">විමසන්න</a>
+    </div>
+    <div class="lang-tools">
+      <select id="languageSelect" aria-label="Select website language">
+        <option value="en">🌐 English</option><option value="si" selected>සිංහල</option><option value="ja">日本語</option><option value="ta">தமிழ்</option><option value="hi">हिन्दी</option><option value="ar">العربية</option><option value="zh-CN">中文</option><option value="ko">한국어</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="es">Español</option>
+      </select>
+      <button class="gold" id="translatePage">Translate</button>
+    </div>
+  </nav>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">FIVE STAR Co., LTD • JAPAN</div>
+      <div class="translate-help">භාෂාව තෝරා Translate ඔබන්න. පරිවර්තන පහසුකම සඳහා වෙබ් අඩවිය publish කර තිබිය යුතු විය හැක.</div>
+      <h1>ජපානයෙන් ඔබට අවශ්‍ය වාහනය සොයාගමු.</h1>
+      <p>ජපාන Vehicle Auction, භාවිත කළ construction machinery සහ genuine/used spare parts පිළිබඳ ඔබගේ අවශ්‍යතාව අපට දන්වන්න. විකල්ප, තත්ත්වය, වියදම් සහ export අවශ්‍යතා ගැන පැහැදිලිව විමසන්න.</p>
+      <div class="hero-actions"><a class="btn gold" href="#contact">වාහනයක් ගැන විමසන්න ↓</a><a class="btn" style="background:#ffffff18;color:#fff;border:1px solid #ffffff55" href="#process">ක්‍රියාවලිය බලන්න</a></div>
+    </div>
+    <div class="hero-visual"><div>Japan Auction Vehicles<br><span style="color:#f4b942">Machinery • Parts • Export</span></div></div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="stats">
+    <div class="stat"><strong>🚗 Vehicles</strong><span>Japanese auction sourcing</span></div>
+    <div class="stat"><strong>🚜 Machinery</strong><span>Used construction equipment</span></div>
+    <div class="stat"><strong>🔧 Auto Parts</strong><span>Part number based inquiries</span></div>
+    <div class="stat"><strong>🌏 Export Support</strong><span>Shipping information inquiries</span></div>
+  </div>
+
+  <section id="about" class="company-intro">
+    <div class="company-card">
+      <div class="company-label">About our company</div>
+      <h2 style="margin:7px 0 12px">FIVE STAR Co., LTD</h2>
+      <p>අපගේ අරමුණ වන්නේ ජපානයේ වාහන සහ භාවිත කළ යන්ත්‍රෝපකරණ පිළිබඳ තොරතුරු පහසුවෙන් ලබාගැනීමටත්, ඔබගේ අවශ්‍යතාවයට ගැළපෙන විකල්ප සොයා බැලීමටත් සහාය වීමයි.</p>
+      <p class="muted">ඔබට අවශ්‍ය වාහනයේ මාදිලිය, නිෂ්පාදිත වර්ෂය, අයවැය සහ භාවිතා කරන රට සඳහන් කර අපෙන් විමසන්න. ලබාගත හැකි බව, මිල සහ අවසන් වියදම් තහවුරු කිරීමෙන් පසුව තීරණය කරන්න.</p>
+    </div>
+    <div class="company-card" style="background:linear-gradient(145deg,#10243a,#1c4a6e);color:#fff;border-color:#1c4a6e">
+      <div class="company-label" style="color:#f4b942">Our promise</div>
+      <h2 style="margin:7px 0 12px">තොරතුරු පැහැදිලිව. තීරණය ඔබට.</h2>
+      <p style="color:#d6e3ef">වාහනයක් තෝරාගැනීමට පෙර Auction Sheet, mileage, හානි සටහන්, chassis number, export eligibility සහ අදාළ ගාස්තු තහවුරු කරගැනීම වැදගත්ය. සෑම වාහනයක්ම ලබාගත හැකි බව හෝ මිල කලින්ම සහතික නොකරයි.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="section-head"><div><h2>අපගේ සේවා</h2><div class="muted">FIVE STAR Co., LTD වෙතින් විමසිය හැකි ප්‍රධාන අංශ</div></div></div>
+    <div class="service-grid">
+      <div class="service-card"><div class="service-icon">🚗</div><h3>ජපාන Auction වාහන</h3><p class="muted">Toyota, Honda, Nissan, Suzuki ඇතුළු වාහන පිළිබඳ ඔබගේ අවශ්‍යතා යොමු කරන්න.</p></div>
+      <div class="service-card"><div class="service-icon">🚜</div><h3>Construction Machinery</h3><p class="muted">Excavator, forklift, wheel loader, roller සහ වෙනත් භාවිත කළ යන්ත්‍රෝපකරණ.</p></div>
+      <div class="service-card"><div class="service-icon">🔧</div><h3>වාහන අමතර කොටස්</h3><p class="muted">Part number, chassis number හෝ වාහන මාදිලිය සමඟ කොටස් පිළිබඳ විමසන්න.</p></div>
+      <div class="service-card"><div class="service-icon">🚢</div><h3>Export සහ Shipping</h3><p class="muted">ශ්‍රී ලංකාවට හෝ වෙනත් රටකට යැවීම සඳහා shipping සහ ලේඛන අවශ්‍යතා ගැන විමසන්න.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><div><h2>වාහනයක් මිලදී ගැනීමට පෙර බලන්න</h2><div class="muted">Auction වාහනයක් තෝරාගැනීමේදී වැදගත් තොරතුරු</div></div></div>
+    <div class="panel">
+      <div class="checklist">
+        <div class="check-item"><span>✓</span><div><strong>Auction Sheet</strong><div class="muted">වාහනයේ තත්ත්ව වාර්තාව සහ සටහන් තිබේදැයි විමසන්න.</div></div></div>
+        <div class="check-item"><span>✓</span><div><strong>Mileage</strong><div class="muted">දක්වා ඇති ධාවන දුර සහ එය තහවුරු කළ හැකිදැයි බලන්න.</div></div></div>
+        <div class="check-item"><span>✓</span><div><strong>Accident / Damage</strong><div class="muted">හානි, අලුත්වැඩියා සහ වාහනයේ තත්ත්වය ගැන විමසන්න.</div></div></div>
+        <div class="check-item"><span>✓</span><div><strong>Total estimated cost</strong><div class="muted">Auction price, fees, inland transport, shipping සහ අදාළ බදු වෙන වෙනම තහවුරු කරන්න.</div></div></div>
+      </div>
+      <div class="note">සටහන: වෙබ් අඩවියේ දක්වා ඇති වාහන හෝ මිල උදාහරණ පමණි. තහවුරු කළ listing එකක් ලෙස නොසලකන්න. අවසන් මිල, availability, export නීති සහ ගාස්තු ලිඛිතව තහවුරු කරගන්න.</div>
+    </div>
+  </section>
+
+  <section id="process" class="section">
+    <div class="section-head"><div><h2>මිලදී ගැනීමේ ක්‍රියාවලිය</h2><div class="muted">ඔබගේ ඉල්ලීමේ සිට වාහනය තෝරාගැනීම දක්වා</div></div></div>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><h3>ඔබගේ අවශ්‍යතාව දන්වන්න</h3><p class="muted">වාහන මාදිලිය, වර්ෂය, අයවැය, mileage සහ භාවිත කරන රට සඳහන් කරන්න.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>විකල්ප සොයා බලන්න</h3><p class="muted">ලබාගත හැකි විකල්ප සහ අදාළ වාහන තොරතුරු ගැන විමසන්න.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>තොරතුරු සහ වියදම් තහවුරු කරන්න</h3><p class="muted">Auction Sheet, තත්ත්වය, ගාස්තු සහ shipping විස්තර පරීක්ෂා කරන්න.</p></div>
+      <div class="step"><div class="step-num">4</div><h3>ඊළඟ පියවර තීරණය කරන්න</h3><p class="muted">මිල සහ නියමයන් එකඟ වූ පසු පමණක් ගනුදෙනුවේ ඊළඟ පියවර සාකච්ඡා කරන්න.</p></div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="section-head"><div><h2>නිතර අසන ප්‍රශ්න</h2><div class="muted">වාහනයක් හෝ යන්ත්‍රෝපකරණයක් ගැන විමසීමට පෙර</div></div></div>
+    <div class="faq-list">
+      <details><summary>මට අවශ්‍ය වාහනයක් website එකේ නැත්නම්?</summary><p>ඔබට අවශ්‍ය make, model, year, budget සහ රට සඳහන් කර inquiry එකක් එවන්න. ලබාගත හැකි විකල්ප තිබේදැයි තහවුරු කරගත හැක.</p></details>
+      <details><summary>Website එකේ පෙන්වන මිල අවසන් මිලද?</summary><p>නැහැ. වාහනය, auction fees, ප්‍රවාහනය, shipping, රක්ෂණය සහ destination රටේ අදාළ බදු අනුව මුළු වියදම වෙනස් විය හැක. ලිඛිත estimate එකක් ඉල්ලන්න.</p></details>
+      <details><summary>ශ්‍රී ලංකාවට export කරන්න පුළුවන්ද?</summary><p>වාහන වර්ගය සහ එවකට ක්‍රියාත්මක import/export නීති අනුව වෙනස් විය හැක. ගනුදෙනුවකට පෙර අදාළ බලධාරීන් සහ shipping agent සමඟ නීති සහ eligibility තහවුරු කරන්න.</p></details>
+      <details><summary>අමතර කොටසක් ගැන විමසීමට මොනවා අවශ්‍යද?</summary><p>වාහන model, chassis number, part number සහ අවශ්‍ය කොටසේ පැහැදිලි ඡායාරූපයක් තිබේ නම් එවන්න.</p></details>
+    </div>
+  </section>
+
+  <section id="contact" class="section panel">
+    <div class="section-head"><div><div class="company-label">Contact FIVE STAR</div><h2 style="margin-top:6px">ඔබගේ inquiry එක සකස් කරන්න</h2><div class="muted">විස්තර පුරවා පණිවිඩය සකස් කරගන්න. මෙය තවම server එකකට දත්ත යවන form එකක් නොවේ.</div></div></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3 style="margin-top:0">FIVE STAR Co., LTD</h3>
+        <p>Japan Vehicle • Used Machinery • Parts • Export Inquiry</p>
+        <div class="contact-line"><strong>🚗 Vehicle Auction</strong><br><span class="small" style="color:#d6e3ef">වාහන සොයාගැනීම සහ auction තොරතුරු</span></div>
+        <div class="contact-line"><strong>🚜 Machinery & Parts</strong><br><span class="small" style="color:#d6e3ef">යන්ත්‍රෝපකරණ සහ අමතර කොටස්</span></div>
+        <p class="small" style="color:#d6e3ef">ඔබගේ සැබෑ දුරකථන අංකය, WhatsApp link, email සහ company address publish කිරීමට පෙර මෙහි එකතු කරන්න.</p>
+      </div>
+      <div>
+        <div class="filters">
+          <div><label for="customer">ඔබගේ නම</label><input id="customer" placeholder="නම"></div>
+          <div><label for="contactInfo">WhatsApp / LINE / දුරකථන</label><input id="contactInfo" placeholder="සම්බන්ධ විය හැකි අංකය"></div>
+          <div><label for="wanted">අවශ්‍ය සේවාව / භාණ්ඩය</label><input id="wanted" placeholder="උදා: Toyota Prius, Excavator"></div>
+          <div><label for="budget">අයවැය (විකල්ප)</label><input id="budget" placeholder="උදා: ¥800,000"></div>
+          <div><label for="year">නිෂ්පාදිත වර්ෂය (විකල්ප)</label><input id="year" placeholder="උදා: 2018–2022"></div>
+          <div><label for="purpose">භාවිතය / ගමනාන්තය</label><select id="purpose"><option>ජපානයේ භාවිතයට</option><option>ශ්‍රී ලංකාවට අපනයනය</option><option>වෙනත් රටකට අපනයනය</option><option>තොරතුරු පමණි</option></select></div>
+          <div style="grid-column:1/-1"><label for="extra">අමතර විස්තර</label><textarea id="extra" rows="3" placeholder="මනාප mileage, grade, colour, part number හෝ වෙනත් අවශ්‍යතා"></textarea></div>
+        </div>
+        <div class="actions"><button class="primary" id="makeInquiry">Inquiry පණිවිඩය සකස් කරන්න</button><button class="secondary" id="copyInquiry">පණිවිඩය Copy කරන්න</button><button class="gold" id="whatsappInquiry">WhatsApp විවෘත කරන්න</button></div>
+        <textarea id="inquiryText" rows="8" style="margin-top:12px" placeholder="Inquiry පණිවිඩය මෙතැන දිස්වේ"></textarea>
+        <p class="small">WhatsApp button එක ක්‍රියා කිරීමට පෙර JavaScript හි WHATSAPP_NUMBER අගයට ඔබගේ company WhatsApp අංකය රටේ කේතය සමඟ ඇතුළත් කරන්න.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div style="font-weight:900;font-size:1.2rem;letter-spacing:.4px"><span style="color:#f4b942">★ FIVE STAR</span> Co., LTD</div>
+  <div style="margin-top:7px">Japan Vehicle • Used Machinery • Parts • Export Inquiry</div>
+  <div class="small" style="color:#bdcddd;margin-top:9px">© <span id="yearNow"></span> FIVE STAR Co., LTD. All rights reserved.</div>
+</footer>
+<script>
+const el = id => document.getElementById(id);
+const WHATSAPP_NUMBER = ""; // උදාහරණය: 819012345678 — + ලකුණ හෝ හිස්තැන් නොදමන්න.
+function buildInquiry(){
+  const name=el("customer").value.trim()||"නම සඳහන් කර නැත";
+  const contact=el("contactInfo").value.trim()||"සම්බන්ධතා තොරතුරු ලබා දී නැත";
+  const wanted=el("wanted").value.trim()||"තවම තෝරාගෙන නැත";
+  const budget=el("budget").value.trim()||"සඳහන් කර නැත";
+  const year=el("year").value.trim()||"සඳහන් කර නැත";
+  const purpose=el("purpose").value;
+  const extra=el("extra").value.trim()||"නැත";
+  el("inquiryText").value=`ආයුබෝවන් FIVE STAR Co., LTD,\n\nඔබගේ සේවාව පිළිබඳ තොරතුරු ලබාගැනීමට කැමතියි.\n\nනම: ${name}\nසම්බන්ධතා: ${contact}\nඅවශ්‍ය සේවාව / භාණ්ඩය: ${wanted}\nඅයවැය: ${budget}\nනිෂ්පාදිත වර්ෂය: ${year}\nභාවිතය / ගමනාන්තය: ${purpose}\nඅමතර විස්තර: ${extra}\n\nකරුණාකර ලබාගත හැකි විකල්ප, තත්ත්වය සහ ඇස්තමේන්තුගත මුළු වියදම දැනුම් දෙන්න.\nස්තුතියි.`;
+}
+el("makeInquiry").addEventListener("click",buildInquiry);
+el("copyInquiry").addEventListener("click",async()=>{
+  if(!el("inquiryText").value)buildInquiry();
+  try{await navigator.clipboard.writeText(el("inquiryText").value);el("copyInquiry").textContent="Copy කළා ✓";}
+  catch(e){el("inquiryText").select();document.execCommand("copy");el("copyInquiry").textContent="Text එක select කළා — copy කරන්න";}
+});
+el("whatsappInquiry").addEventListener("click",()=>{
+  if(!el("inquiryText").value)buildInquiry();
+  if(!WHATSAPP_NUMBER){alert("කරුණාකර HTML code එකේ WHATSAPP_NUMBER අගයට ඔබගේ company WhatsApp අංකය ඇතුළත් කරන්න.");return;}
+  window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(el("inquiryText").value),"_blank","noopener");
+});
+el("translatePage").addEventListener("click",()=>{
+  const lang=el("languageSelect").value;
+  const current=window.location.href;
+  if(current.startsWith("file:")){
+    alert("Translate පහසුකම සඳහා වෙබ් අඩවිය public web address එකක publish කරන්න. නැතිනම් browser Translate භාවිතා කරන්න.");
+    window.open("https://translate.google.com/?sl=auto&tl="+encodeURIComponent(lang),"_blank","noopener");
+    return;
+  }
+  window.open("https://translate.google.com/translate?sl=auto&tl="+encodeURIComponent(lang)+"&u="+encodeURIComponent(current),"_blank","noopener");
+});
+el("yearNow").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
